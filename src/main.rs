@@ -1,4 +1,4 @@
-fn lis(seq: &Vec<i32>) -> Vec<i32> {
+fn lis(seq: &[i32]) -> Vec<i32> {
     let mut lis_list = vec![vec![seq[0]]];
     let mut max_lis = lis_list[0].clone();
     for i in 1..seq.len() {
@@ -17,5 +17,5 @@ fn lis(seq: &Vec<i32>) -> Vec<i32> {
 }
 
 fn main() {
-    println!("{:?}", lis(&vec![0, 8, 4, 2, 7, 5, 3, 1, 4, 8, 10]));
+    println!("{:?}", lis(&[0, 8, 4, 2, 7, 5, 3, 1, 4, 8, 10]));
 }
